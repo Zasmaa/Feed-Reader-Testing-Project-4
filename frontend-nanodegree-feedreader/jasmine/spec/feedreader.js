@@ -61,7 +61,7 @@ $(function() {
             let menuelement = document.querySelector('body');
             let menuIcon = document.querySelector('.menu-icon-link');
             menuIcon.click();
-            expect(menuelement.classList.contains('menu-hidden')).toBe(true);
+            expect($('body').hasClass('menu-hidden')).toBe(true);
         })
             
     })
