@@ -50,19 +50,15 @@ $(function() {
           * visibility when the menu icon is clicked. 
           * and does it hide when clicked again.
           */
-          it('does the menu changes visibility when the menu icon is clicked.' , function () {
+          it('does the menu changes visibility when the menu icon is clicked and does the menu changes when clicked again.' , function () {
             let menuelement = document.querySelector('body');
             let menuIcon = document.querySelector('.menu-icon-link');
             menuIcon.click();
             expect(menuelement.classList.contains('menu-hidden')).toBe(false);
-
-          })
-         it (' does the menu changes when clicked again', function () {
-            let menuelement = document.querySelector('body');
-            let menuIcon = document.querySelector('.menu-icon-link');
             menuIcon.click();
             expect($('body').hasClass('menu-hidden')).toBe(true);
-        })
+
+          })
             
     })
 
